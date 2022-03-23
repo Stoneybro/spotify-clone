@@ -1,0 +1,298 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(56, 56, 59);
+    color: white;
+    margin: 30px 70px;
+   
+}
+/*navigation start*/
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-end;
+    
+}
+nav li{
+  padding: 10px 20px;
+}
+nav li:nth-child(2){
+    margin-left: -40px;
+    
+}
+li img{
+    padding-right: 5px;
+    padding-top: 1px;
+}
+nav li:nth-child(3){
+    margin-left: auto;
+    
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav a:hover{
+    color: rgba(155, 150, 150, 0.726);
+}
+/*navigation end*/
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  
+}
+.image1{
+    position: absolute;
+    bottom: 0;
+   
+}
+.text1{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    right: 20%;
+    top: 30%;
+}
+.one{
+    font-size: 40px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding-bottom: 10px;
+}
+.two{
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    background-color:hsl(210, 50%, 50%);
+    border: rgb(51, 102, 243); 
+    border-radius: 7px;
+    color: white;
+    padding: 8px 15px;
+    margin-top: 8px;
+    
+}
+.circleone{
+    width: 25rem;
+    height: 25rem;
+    background-color: rgba(255, 0, 0, 0.11);
+    border-radius: 50%;
+    position: absolute;
+    top:40vh;
+    right: 5vh;
+    z-index: -1;
+}
+.circletwo{
+    width: 15rem;
+    height: 15rem;
+    background-color: rgba(0, 255, 42, 0.082);
+    border-radius: 50%;
+    position: absolute;
+    bottom:0vh;
+    left: 0vh;
+    z-index: -1;
+    
+}
+
+
+.circlethree{
+    width: 10rem;
+    height: 10rem;
+    background-color: rgba(17, 0, 255, 0.11);
+    border-radius: 50%;
+    position: absolute;
+    top:0vh;
+    right: 70vh;
+    z-index: -1;
+    
+}
+   
+footer ul{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    list-style-type: none;
+    padding: 20px;
+   background-color: rgba(31, 29, 29, 0.281);
+   width: 100%;
+   left: 0;
+   bottom: 0;
+   margin-bottom: 0;
+   font-family: Arial, Helvetica, sans-serif;
+    
+}
+footer li{
+    padding: 0 8px;
+   
+}
+footer li:nth-last-child(3){
+    margin-right: 40%;
+}
+footer li:nth-last-child(4){
+    margin-left: 250px;
+}
+
+.discovermusic{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 27%;
+    left: 21.5%;
+}
+.subdiscover{
+    text-align: center;
+    margin-bottom: 30px;
+    display: flex;
+    
+    
+}
+.subdiscover>div{
+    color: black;
+    margin: 0 5px;
+    padding: 8px 3px;
+    background: rgba(19, 18, 18, 0.288);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.192);
+}
+
+.discoverimage{
+    position: absolute;
+    top: 27%;
+    right: 21.5%;
+}
+.jointext{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    position: absolute;
+    top: 40%;
+    left: 26.5%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background-color: rgba(27, 27, 37, 0.63);
+    padding: 60px 30px;
+    border-radius: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 27%;
+    right: 21.5%;
+}
+input{
+    background-color: rgba(36, 35, 35, 0.336);
+    border:solid 0.5px rgb(115, 113, 122) ;
+    border-radius: 7px;
+    padding: 5px 0px ;
+   
+}
+label{
+    padding: 7px 0;
+}
+.spanny{
+    color: hotpink;
+    font-weight: bold;
+}
+@media (orientation:portrait),(max-width:500px){
+   nav ul{
+        position: relative;
+        left: 50px;
+       
+   }
+   nav li{
+       padding: 0px 5px;
+   }
+   nav li:nth-child(1){
+    margin-right: 30px;
+    
+}
+nav li:nth-child(2){
+    margin-right: 60%;
+    
+    
+}
+.circleone{
+    position: absolute;
+    top: 20;
+    width: 80px;
+    height: 80px;
+}
+.circlethree{
+    position: absolute;
+    top: 7rem;
+    right: 7rem;
+    width: 50px;
+    height: 50px;
+}
+.image1{
+    right: 0;
+    width: 17rem;
+    bottom: -4px;
+}
+
+.text1{
+    margin-left: rem;
+    padding-left: 20px;
+    padding-bottom: 0;
+
+}
+.discoverimage{
+    right: 0;
+    top: 40%;
+    width: 140px;
+    padding-right: 7px;
+}
+.discovermusic{
+    position: absolute;
+    left: 0;
+    padding-right: 70px;
+    padding-left: 10px;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+}
+footer ul{
+    display: flex;
+    padding: 15px;
+    margin: 0;
+}
+footer li{
+    
+    font-size: 17px;
+    padding: 0 5px;
+    margin: 0;
+}
+footer li:hover{
+    color: gray;
+}
+
+footer li:nth-last-child(4){
+    margin-left: 0;
+}
+li span{
+    display: none;
+}
+.jointext{
+    font-size: 30px;
+    top: 20%;
+}
+form{
+    width: fit-content;
+    padding: 10px 10px;
+    top: 30%;
+    right: 13%;
+    overflow-y: auto;
+}
+form input{
+    width: 250px;
+}
+
+}
+
+
+
